@@ -7,9 +7,15 @@ import jakarta.servlet.annotation.*;
 
 @WebServlet(name = "helloServlet", value = "/hello-servlet")
 public class HelloServlet extends HttpServlet {
+
+    {
+        System.out.println("Hello Servlet Default ");
+    }
+
     private String message;
 
     public void init() {
+        System.out.println("Hello Servlet Init ");
         message = "Hello World!";
     }
 
@@ -20,9 +26,14 @@ public class HelloServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html><body>");
         out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + "</h1>");
+        out.println("<h1>" + message + "</h1>");
         out.println("</body></html>");
     }
 
     public void destroy() {
+
+        System.out.println("destroy");
     }
 }
