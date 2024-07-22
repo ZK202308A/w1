@@ -2,24 +2,16 @@
   Created by IntelliJ IDEA.
   User: cooki
   Date: 2024-07-22
-  Time: 오전 11:28
+  Time: 오후 3:03
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <%
 
-    String noStr = request.getParameter("no");
 
-    System.out.println("showCart.jsp ............." + noStr);
+    System.out.println("장바구니에 상품을 담습니다.");
+
+    response.sendRedirect("/cart/showCart.jsp");
 
 %>
-
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>

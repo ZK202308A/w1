@@ -22,4 +22,13 @@ public enum MenuService {
         return menus;
     }
 
+    //특정한 번호의 상품을 반환해 주는 기능
+    public MenuVO getMenuById(int id) {
+
+        //가짜 상품
+        MenuVO menu = new MenuVO(id,"가짜상품", 5000);
+
+        return menu;
+        
+    }
 }

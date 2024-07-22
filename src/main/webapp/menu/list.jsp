@@ -36,17 +36,14 @@
 
  <ul class="menulist">
  <%
-     for (int i = 1; i < menuVOList.size(); i++) {
-
-         MenuVO menuVO = menuVOList.get(i);
-         String imgName = "/img/M"+i+".jpeg";
+     for (int i = 0; i < menuVOList.size(); i++) {
  %>
      <li>
         <div>
             <a href="/menu/detail.jsp?no=1">
-                <img src="<%=imgName%>">
+                <img src="/img/M1.jpeg">
             </a>
-            <span><%=menuVO.getName()%> <%=menuVO.getPrice()%> </span>
+            <span><%=i%></span>
         </div>
      </li>
  <%
