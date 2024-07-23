@@ -18,12 +18,8 @@
 
 %>
 
+<%@include file="../includes/header.jsp"%>
 
-<html>
-<head>
-    <title>Title</title>
-</head>
-<body>
   <h1><%= menuVO.getNo() %></h1>
   <h1><%= menuVO.getName()%></h1>
   <h1><%= menuVO.getPrice()%></h1>
@@ -36,5 +32,4 @@
 
   </form>
 
-</body>
-</html>
+<%@include file="../includes/footer.jsp"%>
